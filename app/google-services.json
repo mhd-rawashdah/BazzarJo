@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "209893118265",
+    "firebase_url": "https://bazzar-2018.firebaseio.com",
+    "project_id": "bazzar-2018",
+    "storage_bucket": "bazzar-2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209893118265:android:bff55b698ef71d7b",
+        "android_client_info": {
+          "package_name": "edu.zu.demo.graduation.bazzar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209893118265-vph9sj6kj0kiju43l9ii3227ugotp40s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.zu.demo.graduation.bazzar",
+            "certificate_hash": "f3bac123cb1550500589fd2f2e4def43775a1cb0"
+          }
+        },
+        {
+          "client_id": "209893118265-ak6igfb56csh3oqj3q1fin26p85jhl8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq7esVgLI7e8WzJ22G4in09sLBYV5lQOE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209893118265-ak6igfb56csh3oqj3q1fin26p85jhl8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

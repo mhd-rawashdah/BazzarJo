@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".BasicActivity.PhoneRegisterActivity">
+
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/PhoneRegister_layoutSendCode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/PhoneRegister_typeUserImg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_buyer" />
+
+                <TextView
+                    android:id="@+id/PhoneRegister_typeUserTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/welcome_buyer"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/PhoneRegister_countryCodePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:clickable="false"
+                android:gravity="center"
+                app:ccp_areaCodeDetectedCountry="true"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_countryAutoDetectionPref="SIM_ONLY"
+                app:ccp_customMasterCountries="JO,SY"
+                app:ccp_showFullName="true"
+                app:ccp_showNameCode="true"
+                app:ccp_showPhoneCode="true"
+                app:ccp_textSize="17sp">
+
+            </com.hbb20.CountryCodePicker>
+
+            <EditText
+                android:id="@+id/PhoneRegister_phoneNumberEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:textDirection="ltr"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="@string/phoneRegisterMsg"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/PhoneRegister_VerifyBtn"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_btn_login"
+                android:text="@string/Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/colorYello"
+                android:textSize="16sp"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/PhoneRegister_layoutReciveCode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="@string/reciveCodeMessage"
+                android:textSize="17sp" />
+
+
+            <EditText
+                android:id="@+id/PhoneRegister_CodeMessageEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background_btn_register"
+                android:gravity="center"
+                android:hint="@string/enter_code"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textDirection="ltr"
+                android:textSize="20sp" />
+
+
+
+            <Button
+
+                android:id="@+id/PhoneRegister_VerifyCodeBtn"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/background_btn_login"
+                android:text="@string/verify_code"
+                android:textAllCaps="false"
+                android:textColor="@color/colorYello"
+                android:textSize="17sp"
+
+                />
+            <Button
+                android:id="@+id/PhoneRegister_resendCodeBtn"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_edit"
+                android:text="@string/resend_code"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/PhoneRegister_layoutProgressBar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/PhoneRegister_progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+    </LinearLayout>
+</LinearLayout>

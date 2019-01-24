@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/Platform.ThemeOverlay.AppCompat.Light"
+    tools:context=".BasicActivity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo_bazzar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:text="Choose user type"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/userTypeSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/TypeUser"
+                        android:padding="7dp"
+                        android:textAlignment="center"></Spinner>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/Login_phone_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edit"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:hint="@string/enter_phone_number"
+                    android:inputType="phone"
+                    android:padding="7dp"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/Login_password_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/background_edit"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:hint="@string/enter_password"
+                    android:inputType="textPassword"
+                    android:padding="7dp"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/Login_forgetPassword_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:padding="7dp"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/Login_login"
+                    android:layout_width="220dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/background_btn_login"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorYello"
+                    android:textSize="16sp"
+
+                    />
+
+                <Button
+                    android:id="@+id/Login_registerAsBuyer"
+                    android:layout_width="220dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/background_registerbtn"
+                    android:text="@string/register_as_buyer"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+
+                    />
+
+                <Button
+                    android:id="@+id/Login_registerAsSeller"
+                    android:layout_width="220dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/background_edit"
+                    android:text="@string/register_as_seller"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/LoginActivity_spinKit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:SpinKit_Color="@color/colorAccent"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        app:SpinKit_Style="FadingCircle"/>
+</android.support.design.widget.CoordinatorLayout>

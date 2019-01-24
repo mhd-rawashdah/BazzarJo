@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">BAZZAR</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="create_new_account">Create new Account</string>
+    <string name="login">Login</string>
+    <string name="enter_password">Enter password</string>
+    <string name="or">OR</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="Title_Home">Bazzar</string>
+    <string name="food">Food</string>
+    <string name="offers">Offers</string>
+    <string name="show_all">Show All</string>
+    <string name="plants">Plants</string>
+    <string name="handcrafts">Handcrafts</string>
+    <string name="sweet">Sweet</string>
+    <string name="mackup">Mackup</string>
+    <string name="crochet">Crochet</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu">Menu</string>
+    <string name="my_order">My Order</string>
+    <string name="register_as_buyer">Register as Buyer</string>
+    <string name="register_as_seller">Register as Seller</string>
+    <string name="welcome_to_bazzar">Welcome to Bazzar</string>
+    <string name="phone_code">+962</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="re_password">Re-Password</string>
+    <string name="register">Register</string>
+    <string name="Continue">Continue</string>
+    <string name="phoneRegisterMsg">Bazzar will send an SMS message to verify your phone number .please enter your phone number.</string>
+    <string name="reciveCodeMessage">You will receive the code message through 1 minute</string>
+    <!--  Error message-->
+    <string name="errorMessage">Error in input information, make sure of your information...</string>
+    <string name="phoneMessageError">Error in phone number,please make sure of your phone...</string>
+    <string name="passMessageError">Please,password must be at least 8 letters or more...</string>
+    <string name="confPassMessageError">Password do not match...</string>
+    <string name="selectCityMessage">Please, select your city...</string>
+    <string name="selectTypeCategoryMessage">Please, select category  type ...</string>
+    <string name="selectGenderMessage">Please, select your gender ... </string>
+    <string name="userExistMessage">This user already exist...</string>
+    <string name="selectImageMessage">Please, select image for your store ....</string>
+    <string name="selectLocationMessage">Please, identify your location by press on get location ....</string>
+    <string name="selectBirthOfDate">Please, select your  birth of date right... ,</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="resend_code">Resend code</string>
+    <string name="verify_code">Verify code</string>
+    <string name="welcome_buyer">Welcome Buyer</string>
+    <string name="welcome_seller">Welcome Seller</string>
+    <string name="todo">TODO</string>
+    <string name="house_mona">house mona</string>
+    <string name="sewing">Sewing</string>
+
+    <string name="online">Online</string>
+    <string name="closed">Closed</string>
+
+    <string-array name="cities">
+        <item>Select city</item>
+        <item>Amman</item>
+        <item>Zarqa</item>
+        <item>Irbid</item>
+        <item>Jerash</item>
+        <item>Mafraq</item>
+        <item>Karak</item>
+        <item>Ajloun</item>
+        <item>Aqaba</item>
+        <item>Madaba</item>
+        <item>Ma'an</item>
+        <item>Tafilah</item>
+        <item>as-Salt</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Select category</item>
+        <item>Food</item>
+        <item>Sweet</item>
+        <item>Mona food</item>
+        <item>Crochet</item>
+        <item>Sweing</item>
+        <item>Mackup</item>
+
+    </string-array>
+
+    <string-array name="TypeUser">
+        <item>Buyer</item>
+        <item>Seller</item>
+    </string-array>
+
+</resources>
