@@ -1,6 +1,6 @@
 # Bazzar Jo For Homemade
 
-> Bazzar JO is a mobile application easy to use which provides an E-commerce platform for people that have home business an easy way to market their products with best quality.
+> BazzarJO is a mobile application easy to use which provides an E-commerce platform for people that have home business an easy way to market their products with best quality.
 ## Team
 
   - __Product Owner__: [Ahmad Barcsia]()
